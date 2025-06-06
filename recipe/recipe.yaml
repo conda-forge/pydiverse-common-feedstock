@@ -1,5 +1,5 @@
 context:
-  version: 0.2.0
+  version: 0.2.1
 
 package:
   name: pydiverse-common
@@ -7,7 +7,7 @@ package:
 
 source:
 - url: https://pypi.org/packages/source/p/pydiverse-common/pydiverse_common-${{ version }}.tar.gz
-  sha256: 1b6ed116f1723120658206fcb657a50e5575e590fa0d6c1ecab4a85d30a50f4b
+  sha256: 7a0c484f187a579056358fb5fdb9aae142029baef4c9ec0fd2c8f07dc07cffe1
 
 build:
   script: ${{ PYTHON }} -m pip install .
