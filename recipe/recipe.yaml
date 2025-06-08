@@ -1,13 +1,15 @@
 context:
-  version: 0.2.1
-
+  name: pydiverse-common
+  version: "0.3.0"
+  python_min: '3.10'
+  
 package:
   name: pydiverse-common
   version: ${{ version }}
 
 source:
-- url: https://pypi.org/packages/source/p/pydiverse-common/pydiverse_common-${{ version }}.tar.gz
-  sha256: 7a0c484f187a579056358fb5fdb9aae142029baef4c9ec0fd2c8f07dc07cffe1
+  - url: https://pypi.org/packages/source/p/pydiverse-common/pydiverse_common-${{ version }}.tar.gz
+    sha256: 0cb6e438fe57f72995e6b12da4120626bbaa490185df03fda9a4c88039866ee7
 
 build:
   script: ${{ PYTHON }} -m pip install .
@@ -16,18 +18,18 @@ build:
 
 requirements:
   host:
-  - python ${{ python_min }}.*
-  - hatchling
-  - pip
+    - python ${{ python_min }}.*
+    - hatchling
+    - pip
   run:
-  - python >=${{ python_min }}
+    - python >=${{ python_min }}
 
 tests:
-- python:
-    imports:
-    - pydiverse.common
-    pip_check: true
-    python_version: ${{ python_min }}.*
+  - python:
+      imports:
+        - pydiverse.common
+      pip_check: true
+      python_version: ${{ python_min }}.*
 
 about:
   summary: Common functionality shared between pydiverse libraries
