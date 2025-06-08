@@ -1,6 +1,8 @@
 context:
+  name: pydiverse-common
   version: "0.3.0"
-
+  python_min: '3.10'
+  
 package:
   name: pydiverse-common
   version: ${{ version }}
