@@ -22,7 +22,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - python-box >-7.3.2,<8
+    - python-box >=7.3.2,<8
 
 tests:
   - python:
