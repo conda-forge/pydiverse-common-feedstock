@@ -1,6 +1,6 @@
 context:
   name: pydiverse-common
-  version: "0.4.0"
+  version: "0.4.1"
   python_min: '3.10'
 package:
   name: pydiverse-common
@@ -8,7 +8,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/p/pydiverse-common/pydiverse_common-${{ version }}.tar.gz
-    sha256: 1281780c40d2ccc2038cd0e2f9b162d7774c09e8244213364dadf0feb0de3760
+    sha256: 2c9d7e05c9685941b9d05295c283a90d051d1c9c48a3740df03a25deadf29272
 
 build:
   script: ${{ PYTHON }} -m pip install .
